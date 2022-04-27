@@ -14,6 +14,7 @@ async function pictureButtonHandler() {
         document.querySelector('img').src = data.results[randomNumber].urls.regular
 
     } catch (error) {
+        document.querySelector('h2').innerText = ''
         span.innerText = 'Sorry Server Not Responding Try Again Later!'
         console.log('API Failed', error)
     }
