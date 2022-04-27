@@ -4,7 +4,7 @@ async function pictureButtonHandler() {
 
     const response = await fetch(url)
     const data = await response.json()
-    console.log(data)
+    document.querySelector('h2').innerText = data.results[0].alt_description
 }
 
 const pictureButton = document.querySelector('button')
