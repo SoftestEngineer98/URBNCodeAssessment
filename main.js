@@ -9,7 +9,7 @@ async function pictureButtonHandler() {
         const response = await fetch(url)
         const data = await response.json()
         console.log(data)
-        if (data.results.length === 0) {            
+        if (data.results.length === 0) {
             document.querySelector('h2').innerText = ''
             document.querySelector('img').src = ''
             span.innerText = 'No results found for search'
@@ -32,3 +32,12 @@ async function pictureButtonHandler() {
 const pictureButton = document.querySelector('button')
 pictureButton.addEventListener('click', pictureButtonHandler)
 
+pictureInput.addEventListener("keypress", function(event) {
+    // If the user presses the "Enter" key on the keyboard
+    if (event.key === "Enter") {
+        // Cancel the default action, if needed
+        event.preventDefault();
+        // Trigger the button element with a click
+        document.getElementById("btn").click();
+    }
+});
