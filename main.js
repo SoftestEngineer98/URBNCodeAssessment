@@ -8,7 +8,8 @@ async function pictureButtonHandler() {
         span.innerText = ''
         const response = await fetch(url)
         const data = await response.json()
-        if (data.results.length === 0) {
+        console.log(data)
+        if (data.results.length === 0) {            
             document.querySelector('h2').innerText = ''
             document.querySelector('img').src = ''
             span.innerText = 'No results found for search'
