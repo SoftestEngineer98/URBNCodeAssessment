@@ -18,23 +18,24 @@ body {
 }
 
 h1 {
-    color: gold;
+    color: #CCC7D3;
     text-align: center;
     font-size: 50px;
 }
 
 main {
     background: rgba(255, 255, 255, .5);
-    height: 600px;
+    /* height: 600px; */
     width: 700px;
-    margin-left: 30%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 5%;
     border: 2px solid white;
 }
 
 button {
     margin-top: 3%;
-    margin-left: 40%;
+    /* margin-left: 40%; */
     height: 50px;
     width: 120px;
     background-color: black;
@@ -46,8 +47,8 @@ button {
 img {
     /* margin-left: 25%; */
     border: none;
-    width: 100%;
-    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 h2 {
